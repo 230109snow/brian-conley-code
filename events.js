@@ -21,28 +21,85 @@ function modifyNum(number){
     countElem.innerText = num;
 }
 
+//fizzbuzz() - Can call function before being defind
+
 function fizzbuzz(){
-    console.log(document.querySelector('#fizzbuzz-input').value);
+    const userInput = document.querySelector('#fizzbuzz-input').value;
     //you'll want to look up
     //javascript loops (either while, or for will work well)
-    let n;
-    for (let i = 0; i < n; i++) {
-        if(i % 3 == 0 ){
-            console.log("Fizz"+(i));
+    // let n;
+    // for (let i = 0; i < n; i++) {
+    //     if(i % 15 == 0 ){
+    //         console.log("Fizz"+(i));
         // } else if(i % 5 == 0){
         //     console.log("Buzz"+(i));
-        // } else if(i % 15 == 0){
+        // } else if(i % 3 == 0){
         //     console.log("FizzBuzz"+(i));
-        } else {
-            console.log(i);
-        }
+        // } else {
+        //     console.log(i);
+        // }
         
-    }
+    // }
     //conditionals(if, elseif, else) or switch statements
     //modulo operator will also come handy here
-    console.log(document.querySelector('#fizzbuzz-output').value);
+    // console.log(document.querySelector('#fizzbuzz-output').value);
+
+    //Use for loop
+    //We are initializing our counter variable(i) to 1, while it is less than or equal to userInput value, we'll continue looping
+    //we'll continue looping
+    //after each iteration, we'll increment the value of i by 1
+    for(let i = 1; i <= userInput; i++){
+        console.log(i);     //Take small steps for success and build up slowly
+    }
+
+    //closure
+    function divisible(){
+        let result = '';
+        if(num % 15 === 0){         //Go through the flow of the most restrictive to least
+            result += "fizzbuzz";
+        }
+        else if(num % 5 ===0){
+            result += "buzz";
+        }
+        else if(num % 3 ===0){
+            result += "fizz";
+        }
+        else{
+            result += num;
+        }
+    
+        // switch(num){        //Break not need; will flow through naturally
+        //     case 15:
+        //         result += "fizzbuzz"
+        //     //break;
+        //     case 5:
+        //         result += "buzz"
+        //     //break;
+        //     case 3:
+        //         result += "fizz"
+        //     //break;
+        //     default:
+        //         result += num
+        // }
+    
+        return result;
+    }
 }
 
 function calculator(value){
-    const calcValue = document.getElementById("expression")
+    const calcValue = document.querySelector('calc-val');
+    calcValue
 }
+
+//different ways to create functions
+
+const fn = function(){
+
+}
+
+const fn2 = calculator;
+
+const fn3 = () => {
+
+}
+

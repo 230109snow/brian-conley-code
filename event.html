@@ -20,37 +20,68 @@
     </nav>
     <div class="container">
         <h2>Counter</h2>
-        <div id="count">0</div>
+        <div id="count">0</div>     <!-- the onclick functions affect the count here -->
         <button onclick="increment()">Increment</button>
         <button onclick="decrement()">Decrement</button>
         <button onclick="reset()">Reset</button>            
     </div>
+        
+        <!-- if event, use ; and type 'return false' -->
+        <!-- even.preventDefault() -->
+        <!-- event bubbling -->
+        <!-- event.stopPropagation ()-->
 
     <div class="container">
         <h2>FizzBuzz</h2>
-        <input type="number" name="fizzbuzz-input" id="fizzbuzz-input">
+        <input type="number" max="100" min="1" name="fizzbuzz-input" id="fizzbuzz-input">
         <button onclick="fizzbuzz()">Fizzbuzz!</button>
         <div id="fizzbuzz-output"></div>
         <!-- a placeholder div to print your output-->
-    </div>
+
+        <!-- <table id="fizzbuzz-output">
+             a placeholder div to print your output -->
+            <!-- <thead></thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+                 and so on -->
+            <!-- </tbody>
+        </table> -->
+    <!-- </div> -->
 
     <div class="container">
         <h2>Calculator</h2>
         <div id="expression">
             <!-- This is where i'll  output the expression user is entering -->
         </div>
-        <button>9</button>
-        <button>8</button>
-        <button>7</button>
-        <button>6</button>
-        <button>5</button>
-        <button>4</button>
-        <button>3</button>
-        <button>2</button>
-        <button>1</button>
-        <button>0</button>
-        <button>+</button>
-        <button>Submit</button>
+        <div>
+            <button class="calc-val">9</button>
+            <button class="calc-val">8</button>
+            <button class="calc-val">7</button>
+        </div>
+        
+        <div>
+            <button class="calc-val">6</button>
+            <button class="calc-val">5</button>
+            <button class="calc-val">4</button>
+        </div>
+        
+        <div>
+            <button class="calc-val">3</button>
+            <button class="calc-val">2</button>
+            <button class="calc-val">1</button>
+        </div>
+        <div>
+            <button class="calc-val">0</button>            
+            <button id="equals">Submit</button>
+        </div>
+        <div>
+            <button id="calc-in">+</button>
+            <button id="calc-in">-</button>
+            <button id="calc-in">*</button>
+            <button id="calc-in">/</button>
+        </div>
     </div>
     <script src="events.js"></script>
 </body>
