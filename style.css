@@ -15,3 +15,26 @@ h2 {
 .container {
     margin: 10pt;
 }
+
+#expression {    
+    width: 260px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 2px;                            /* if displayed solo, all directions have same value*/
+    padding: 2px 2px 2px 5px;               /* affects show clockwise: top right bottom left*/
+}                                           /* if displayed as a pair, first value affects top and bottom, second value affect left and right*/
+
+.calc-num, .operation {
+    margin: 2px 1px;
+    padding: 1px 25px;
+}
+
+.calc-num:hover, .operation:hover, #equals:hover {
+    background-color: lightgray;
+}
+
+#equals{
+    padding: 1px 59px;
+}
+
+

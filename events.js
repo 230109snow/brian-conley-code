@@ -86,20 +86,42 @@ function fizzbuzz(){
     }
 }
 
-function calculator(value){
+function display(){
+    const calcVal = document.querySelector('expression')
+    calcVal.textContent = "9";
+
+    // const numBtn = document.querySelectorAll("calc-num")
+    // const operatorBtn = document.querySelectorAll("operation")
+    // const equalsBtn = document.getElementById("equals")
+}
+
+let numOne;
+let numTwo;
+
+function calculator(numOne, numTwo){
+    const calc = 0
+    switch(numOne, numTwo){
+        case '+': 
+            calc = numOne + numTwo
+            break
+        case '-': 
+            calc = numOne - numTwo
+            break
+        case '*': 
+            calc = numOne * numTwo
+            break
+        case '/': 
+            calc = numOne / numTwo
+            break
+        default: return "Error"
+    }      
+        
     const calcValue = document.querySelector('calc-val');
     calcValue
 }
 
-//different ways to create functions
-
-const fn = function(){
-
-}
-
-const fn2 = calculator;
-
-const fn3 = () => {
-
-}
+// //different ways to create functions
+// const fn = function(){}
+// const fn2 = calculator;
+// const fn3 = () => {}
 
