@@ -86,9 +86,9 @@ function fizzbuzz(){
     }
 }
 
-function display(){
-    const calcVal = document.querySelector('expression')
-    calcVal.textContent = "9";
+function display(num){
+    document.getElementById('expression').value += num
+    return num
 
     // const numBtn = document.querySelectorAll("calc-num")
     // const operatorBtn = document.querySelectorAll("operation")
@@ -99,20 +99,16 @@ let numOne;
 let numTwo;
 
 function calculator(numOne, numTwo){
-    const calc = 0
+    const calc = 0                      //initialize if using const keyword
     switch(numOne, numTwo){
-        case '+': 
-            calc = numOne + numTwo
-            break
-        case '-': 
-            calc = numOne - numTwo
-            break
-        case '*': 
-            calc = numOne * numTwo
-            break
-        case '/': 
-            calc = numOne / numTwo
-            break
+        case '+': calc = numOne + numTwo
+            break            
+        case '-': calc = numOne - numTwo
+            break            
+        case '*': calc = numOne * numTwo
+            break            
+        case '/': calc = numOne / numTwo
+            break            
         default: return "Error"
     }      
         
