@@ -87,7 +87,12 @@ function fizzbuzz(){
 }
 
 function display(num){
-    document.getElementById('expression').value += num
+
+    // document.getElementById('expression') = document.querySelectorAll('calc-num');                           // error, doesn't work
+    // document.getElementById('expression').textContent = document.querySelectorAll('calc-num').value;         // div space collapses
+    // document.getElementById('expression') = document.querySelectorAll('calc-num').value;                     // error, doesn't work
+
+    document.getElementById('expression').value += num                                   // does not generate output
     return num
 
     // const numBtn = document.querySelectorAll("calc-num")
