@@ -23,6 +23,12 @@ function fetch(){
 
 }
 
+let apiKey, apiKeyLoaded = false;
+fetch('./apiKey.json').then((res) => res.json()).then((data) => {
+    apiKey = data.blablaAPI
+    apiKeyLoaded = true;
+})
+
 function dummy() {
     const image = document.querySelector("my-image");
     fetch('flower.jpg')
