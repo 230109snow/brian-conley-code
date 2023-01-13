@@ -46,7 +46,7 @@
         <div id="expression">0
             <!-- This is where i'll output the expression user is entering -->
         </div>        
-        <button class="calc-num" value="9" onclick="display(9)" >9</button>
+        <button type="button" class="calc-num" value="9" onclick="display('9')" >9</button>
         <button class="calc-num" value="8">8</button>
         <button class="calc-num" value="7">7</button>
         <button class="operation" value="/">/</button>       
@@ -67,6 +67,8 @@
         <br>
         <button id="clear" value="clear">Clear</button>           
     </div>
+
+    <input type="button" class="calc-num" value="9" onclick="display('9')">
     <script src="events.js"></script>
 </body>
 </html>
